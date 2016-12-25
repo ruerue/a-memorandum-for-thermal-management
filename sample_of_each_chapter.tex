@@ -1,0 +1,23 @@
+%===== settings =====
+\expandafter\ifx\csname ifdraft\endcsname\relax
+	\documentclass[a4paper]{article}
+	\usepackage[whole]{bxcjkjatype}
+	\setlength{\textwidth}{480pt}
+	\setlength{\oddsidemargin}{-0.5cm}
+	\setlength{\evensidemargin}{-0.5cm}
+	\usepackage{amsmath}
+	\usepackage[unicode, bookmarks=true,colorlinks=true]{hyperref}
+	\setminchofont{ipaexm.ttf}
+	\setgothicfont{ipaexg.ttf}
+	\begin{document}
+\fi
+
+%===== text =====
+\section{章}
+テキスト
+
+
+%===== settings =====
+\expandafter\ifx\csname ifdraft\endcsname\relax
+	\end{document}
+\fi

@@ -1,0 +1,23 @@
+%===== settings =====
+\documentclass[a4paper]{article}
+\usepackage[whole]{bxcjkjatype}
+\setlength{\textwidth}{480pt}
+\setlength{\oddsidemargin}{-0.5cm}
+\setlength{\evensidemargin}{-0.5cm}
+\usepackage{amsmath}
+\usepackage[unicode, bookmarks=true,colorlinks=true]{hyperref}
+\setminchofont{ipaexm.ttf}
+\setgothicfont{ipaexg.ttf}
+% \usepackage{CJK}
+%--- code for including each chapter -----
+\newcommand{\ifdraft}{false}
+\begin{document}
+% \begin{CJK*}{UTF8}{min}
+\title{機構設計部門に配属された人のための伝熱工学}
+\maketitle
+
+%========== begin text ==========
+\include{./00_introduction/main_introduction}
+%========== end text ==========
+% \end{CJK*}
+\end{document}
