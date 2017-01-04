@@ -1,24 +1,49 @@
 %===== settings =====
+%\expandafter\ifx\csname ifdraft\endcsname\relax
+%	\documentclass[a4paper]{article}
+%	\usepackage{bxcjkjatype}
+%	\setlength{\textwidth}{480pt}
+%	\setlength{\oddsidemargin}{-0.5cm}
+%	\setlength{\evensidemargin}{-0.5cm}
+%	\usepackage{amsmath}
+%	\usepackage[unicode, bookmarks=true,colorlinks=true]{hyperref}
+%	\setminchofont{ipaexm.ttf}
+%	\setgothicfont{ipaexg.ttf}
+%	\begin{document}
+%\fi
+%===== settings =====
 \expandafter\ifx\csname ifdraft\endcsname\relax
 	\documentclass[a4paper]{article}
-	\usepackage[whole]{bxcjkjatype}
 	\setlength{\textwidth}{480pt}
 	\setlength{\oddsidemargin}{-0.5cm}
 	\setlength{\evensidemargin}{-0.5cm}
 	\usepackage{amsmath}
-	\usepackage[unicode, bookmarks=true,colorlinks=true]{hyperref}
-	\setminchofont{ipaexm.ttf}
-	\setgothicfont{ipaexg.ttf}
+	\usepackage{CJK}
 	\begin{document}
+	\begin{CJK*}{UTF8}{min}
 \fi
 
 %===== text =====
 \section{序章}
 \subsection{執筆にあたって}
 
-私は会社に入って伝熱工学を勉強しました。私の専門は音響学で伝熱現象に対する理解はありませんでしたが、専門分野の勉強は人並み以上にはやってきたつもりだったので、伝熱工学も原理さえ押さえれば理解できるだろうと思っていました。また、連続体の力学については理解しているつもりだったので、波動方程式と比較して少々式が複雑になっても同じように考えることができるだろうと考えていました。
+%私は、設計システム技術センターの清家剛と申します。
+%私は現在、入社3年目で、
+%ずっと冷蔵庫の省エネ開発に関わらせて頂いています。
 
-意気揚々と伝熱工学の勉強を開始し、熱伝導については、違和感なく受け入れることができました。基礎的な問題については固体力学でいうフックの法則と同じように考えることができるためです。しかし、対流熱伝達については、その概要を理解することができませんでした。その理由は
+私は会社に入って伝熱工学を勉強しました。
+私の専門は音響学で伝熱現象に対する理解はありませんでしたが、
+専門分野の勉強は人並み以上にはやってきたつもりだったので、
+伝熱工学も原理さえ押さえれば理解できるだろうと思っていました。
+また、連続体の力学については理解しているつもりだったので、
+波動方程式と比較して少々式が複雑になっても、
+同じように考えることができるだろうと考えていました。
+
+意気揚々と伝熱工学の勉強を開始し、
+熱伝導の考え方については違和感なく受け入れることができました。
+固体力学でいうフックの法則と同じように考えることができるためです。
+しかし、対流熱伝達については、理解することができませんでした。
+その理由は
 
 \begin{itemize}
 	\item 乱流の定義が定性的でよくわからない。
@@ -29,10 +54,14 @@
 
 
 \subsection{目的}
+\begin{equation}
+	\pi = 3.14
+\end{equation}
 
 
 %===== settings =====
 \expandafter\ifx\csname ifdraft\endcsname\relax
+	\end{CJK*}
 	\end{document}
 \fi
 
